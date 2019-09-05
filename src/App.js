@@ -1,5 +1,5 @@
 import React from 'react';
-import Tabs from './accordian-drill/Tabs';
+import Tabs from './event-handler-practice/Tabs';
 
 const tabsProp = [
   { name: 'First tab',
