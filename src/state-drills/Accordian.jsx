@@ -1,4 +1,5 @@
 import React from 'react';
+import './Accordian.css';
 
 export default class Accordian extends React.Component {
 
@@ -11,9 +12,15 @@ export default class Accordian extends React.Component {
   }
 
   handleButtonClick = (index) => {
-    this.setState({
-      currentMenuIndex: index
-    })
+    if(this.state.currentMenuIndex === index) {
+      this.setState({
+        currentMenuIndex: null
+      })
+    } else {
+      this.setState({
+        currentMenuIndex: index
+      })
+    }
   }
 
   renderMenuIndexContent = () => {
