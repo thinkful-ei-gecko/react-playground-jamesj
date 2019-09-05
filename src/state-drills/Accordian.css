@@ -19,6 +19,13 @@ p {
 button {
   width: 10%;
   padding: 2em;
-  background-color: rgb(243, 243, 243);
-  color: black!important;
+  border: none;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  background-color: rgb(75, 73, 73);
+  color: white;
+}
+
+button:focus {
+  outline: none;
 }
