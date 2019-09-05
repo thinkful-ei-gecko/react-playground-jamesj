@@ -11,7 +11,6 @@ export default class Accordian extends React.Component {
   }
 
   handleButtonClick = (index) => {
-    console.log('you clicked button', index)
     this.setState({
       currentMenuIndex: index
     })
